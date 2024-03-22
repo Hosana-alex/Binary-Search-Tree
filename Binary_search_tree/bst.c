@@ -85,7 +85,7 @@ int height(struct Node* node){
 
 void print_level_and_height(struct Node* root, int data){
     struct Node* current = root;
-    int level = 0;
+    int level = -1;
     while (current != NULL) {
         if (current-> data == data) {
             printf("Node %d is at level %d and its height is %d.\n", data, level, height(current));
